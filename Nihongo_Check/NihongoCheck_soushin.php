@@ -60,7 +60,7 @@ EOD;
       $body .= chunk_split(base64_encode(file_get_contents($file)));
       $body .= "--__BOUNDARY__";
       //メール送信-----------------------------------------------------------
-      if(mb_send_mail("asachancomsan@gmail.com", $title, $body,$head)){
+      if(mb_send_mail("example@gmail.com", $title, $body,$head)){
         echo "<h4 class='text-center'>メールを送信しました</h4>";
       } else {
         echo "<h4 class='text-center'>メールの送信に失敗しました</h4>";
